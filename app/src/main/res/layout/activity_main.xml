@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:res-auto="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textSize="48sp"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-condensed-medium"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:gravity="center_vertical|center"
+            android:orientation="vertical">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Продолжить"
+                android:layout_marginBottom="15sp" />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Новая игра"
+                android:layout_marginBottom="15sp" />
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Об игре"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Created by Sprada"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+</LinearLayout>
