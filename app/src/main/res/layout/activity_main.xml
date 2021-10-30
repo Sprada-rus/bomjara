@@ -23,17 +23,30 @@
             android:gravity="center_vertical|center"
             android:orientation="vertical">
         <Button
-                android:layout_width="wrap_content"
+                android:id="@+id/continue_btn"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:text="Продолжить"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/main_button"
                 android:layout_marginBottom="15sp" />
         <Button
-                android:layout_width="wrap_content"
+                android:id="@+id/new_game_btn"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/main_button"
                 android:text="Новая игра"
                 android:layout_marginBottom="15sp" />
-        <Button android:layout_width="wrap_content"
+        <Button
+                android:id="@+id/info_btn"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:background="@drawable/main_button"
                 android:text="Об игре"/>
     </LinearLayout>
     <TextView
@@ -42,5 +55,6 @@
             android:layout_weight="1"
             android:text="Created by Sprada"
             android:textSize="16sp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:gravity="center_vertical"/>
 </LinearLayout>
