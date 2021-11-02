@@ -20,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
         var handler = Handler()
         handler.postDelayed(
             {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK))
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
 
                 finish()

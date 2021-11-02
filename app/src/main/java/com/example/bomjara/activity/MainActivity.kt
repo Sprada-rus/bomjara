@@ -4,6 +4,7 @@ package com.example.bomjara.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import com.example.bomjara.R
@@ -16,6 +17,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        if(intent.getBooleanExtra("EXIT", false)){
+            super.onBackPressed()
+        }
+
         continueBtn = findViewById(R.id.continue_btn)
         newGameBtn = findViewById(R.id.new_game_btn)
         infoBtn = findViewById(R.id.info_btn)
@@ -36,12 +42,14 @@ class MainActivity : AppCompatActivity() {
     private fun continueListener(view: View){
         val intent = Intent(this, GameActivity::class.java)
         intent.putExtra("HAS_SAVE", true)
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
         startActivity(intent)
     }
 
     private fun newGameListener(view: View){
         val intent = Intent(this, GameActivity::class.java)
         intent.putExtra("HAS_SAVE", false)
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }
 
