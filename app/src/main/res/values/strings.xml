@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Bomjara</string>
     <string name="toast_vack_pressed">Для выхода нажмите кнопку \"Назад\" 2 раза</string>
+    <string name="info_tab">Info</string>
+    <string name="health_tab">Health</string>
+    <string name="recreation_tab">Recreation</string>
+    <string name="work_tab">Work</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

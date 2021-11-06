@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_info"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/info_tab"/>
+
+    <item
+        android:id="@+id/nav_health"
+        android:icon="@drawable/ic_baseline_medical_services_24"
+        android:title="@string/health_tab"/>
+
+    <item
+        android:id="@+id/nav_recreation"
+        android:icon="@drawable/ic_recreation_nav_24"
+        android:title="@string/recreation_tab"/>
+
+    <item
+        android:id="@+id/nav_work"
+        android:icon="@drawable/ic_baseline_work_24"
+        android:title="@string/work_tab"/>
+</menu>

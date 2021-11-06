@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_activity_nav"
+    app:startDestination="@id/nav_info">
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.example.bomjara.fragments.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info"/>
+
+    <fragment
+        android:id="@+id/nav_health"
+        android:name="com.example.bomjara.fragments.HealthFragment"
+        android:label="Health"
+        tools:layout="@layout/fragment_health"/>
+
+    <fragment
+        android:id="@+id/nav_recreation"
+        android:name="com.example.bomjara.fragments.RecreationFragment"
+        android:label="Recreation"
+        tools:layout="@layout/fragment_recreation"/>
+
+    <fragment
+        android:id="@+id/nav_work"
+        android:name="com.example.bomjara.fragments.WorkFragment"
+        android:label="Work"
+        tools:layout="@layout/fragment_work"/>
+
+</navigation>
