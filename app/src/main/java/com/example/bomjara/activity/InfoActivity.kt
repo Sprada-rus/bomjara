@@ -14,11 +14,9 @@ class InfoActivity : AppCompatActivity() {
 
         var arrowBack = findViewById<ImageView>(R.id.arrow_back)
 
-        arrowBack.setOnClickListener(this::pressedArrowBack)
-    }
-
-    private fun pressedArrowBack(view: View){
-        super.onBackPressed()
+        arrowBack.setOnClickListener {
+            super.onBackPressed()
+        }
     }
 
 }

@@ -7,4 +7,11 @@
     <string name="work_tab">Work</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tent">Tent</string>
+    <string name="shelter">Shelter</string>
+    <string name="room">Room</string>
+    <string name="removable_room">Rented room</string>
+    <string name="flat">Flat</string>
+    <string name="cottage">Cottage</string>
+    <string name="acceess">Confirm</string>
 </resources>

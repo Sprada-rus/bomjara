@@ -18,45 +18,43 @@
         android:paddingBottom="20dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_heart_24"/>
         <TextView
+            android:id="@+id/health_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_recreation_nav_24"/>
+        <TextView
+            android:id="@+id/recreation_count"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:text="Life"
+            android:text="0"
             android:textSize="20sp"/>
-        <TextView
+        <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="0"
-            android:gravity="center"
-            android:textSize="20sp" />
+            android:src="@drawable/ic_baseline_money_on_24"/>
         <TextView
+            android:id="@+id/money_count"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:text="Happy"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
-            android:gravity="center"
-            android:text="0"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:gravity="center"
-            android:text="Money"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.7"
+            android:layout_weight="2"
             android:gravity="center"
             android:text="0"
             android:textSize="20sp"/>

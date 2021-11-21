@@ -9,13 +9,21 @@
         android:id="@+id/nav_info"
         android:name="com.example.bomjara.fragments.InfoFragment"
         android:label="Info"
-        tools:layout="@layout/fragment_info"/>
+        tools:layout="@layout/fragment_info">
+        <action
+            android:id="@+id/action_nav_info_to_nav_work"
+            app:destination="@id/nav_work" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_health"
         android:name="com.example.bomjara.fragments.HealthFragment"
         android:label="Health"
-        tools:layout="@layout/fragment_health"/>
+        tools:layout="@layout/fragment_health">
+        <action
+            android:id="@+id/action_nav_health_to_nav_recreation"
+            app:destination="@id/nav_recreation" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_recreation"
@@ -27,6 +35,10 @@
         android:id="@+id/nav_work"
         android:name="com.example.bomjara.fragments.WorkFragment"
         android:label="Work"
-        tools:layout="@layout/fragment_work"/>
+        tools:layout="@layout/fragment_work">
+        <action
+            android:id="@+id/action_nav_work_to_nav_health"
+            app:destination="@id/nav_health" />
+    </fragment>
 
 </navigation>
